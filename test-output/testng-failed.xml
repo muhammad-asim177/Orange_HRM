@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="methods" name="Failed suite [ParallelTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="methods" name="LoginTest(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.orangehrm.tests.LoginTest">
         <methods>
-          <include name="testLogin"/>
           <include name="tearDown"/>
-          <include name="testPageUrlAndTitle"/>
-          <include name="testLoginWithBlankUsername"/>
-          <include name="setUpLoginPage"/>
-          <include name="testLoginWithBlankCredentials"/>
-          <include name="testLoginWithBlankPassword"/>
           <include name="setUp"/>
-          <include name="testLoginWithInvalidUsername"/>
-          <include name="testPasswordFieldIsMasked"/>
           <include name="testLoginWithInvalidPassword"/>
-          <include name="testLoginFieldPlaceholders"/>
-          <include name="testForgotPasswordLinkVisibility"/>
+          <include name="setUpLoginPage"/>
         </methods>
       </class> <!-- com.orangehrm.tests.LoginTest -->
     </classes>
-  </test> <!-- LoginTest(failed) -->
-</suite> <!-- Failed suite [ParallelTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

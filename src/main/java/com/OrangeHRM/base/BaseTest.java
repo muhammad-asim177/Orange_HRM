@@ -10,7 +10,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -18,7 +17,7 @@ public class BaseTest {
     protected Properties prop;
 
     @BeforeMethod
-    @Parameters("browser")
+    
     public void setUp() {
         // Load config
         prop = ConfigReader.initProperties();
@@ -57,7 +56,7 @@ public class BaseTest {
     }
 
     // Optional: Clean up after tests
-    @BeforeMethod
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();

@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testPasswordFieldIsMasked"/>
+          <include name="testLoginWithInvalidPassword"/>
           <include name="setUpLoginPage"/>
         </methods>
       </class> <!-- com.orangehrm.tests.LoginTest -->
