@@ -47,7 +47,7 @@ public class BaseTest {
                 throw new IllegalArgumentException("Browser not supported: " + browser);
         }
 
-        // Set up WebDriver timeout and maximize window
+        // Set up WebDriver timeout and maximize windowsasasasa
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
